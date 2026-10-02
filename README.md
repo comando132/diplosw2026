@@ -39,7 +39,7 @@ mi-proyecto/
 ## Requisitos
 
 - Docker y Docker Compose
-- Node.js 18+ y npm
+- Node.js utlimo lts y npm
 
 ## Puesta en marcha
 
@@ -92,14 +92,14 @@ npm run dev          # http://localhost:5173 (proxy /api -> http://localhost:800
 
 ## Endpoints de la API
 
-| Método | Ruta                       | Descripción                              |
-|--------|----------------------------|------------------------------------------|
-| GET    | `/api/proyectos`           | Lista paginada (`?destacados=1&categoria=`) |
-| GET    | `/api/proyectos/{slug}`   | Detalle de un proyecto                   |
-| GET    | `/api/clientes`            | Listado de clientes (`?destacados=1`)   |
-| GET    | `/api/tecnologias`         | Listado de tecnologías (`?categoria=`)   |
-| POST   | `/api/contacto`            | Envía un mensaje (envía correo vía Mailpit) |
-| POST   | `/api/cotizaciones`        | Envía una cotización (envía correo vía Mailpit) |
+| Método | Ruta | Descripción |
+| --- | --- | --- |
+| GET | `/api/proyectos` | Lista paginada (`?destacados=1&categoria=`) |
+| GET | `/api/proyectos/{slug}` | Detalle de un proyecto |
+| GET | `/api/clientes` | Listado de clientes (`?destacados=1`) |
+| GET | `/api/tecnologias` | Listado de tecnologías (`?categoria=`) |
+| POST | `/api/contacto` | Envía un mensaje (envía correo vía Mailpit) |
+| POST | `/api/cotizaciones` | Envía una cotización (envía correo vía Mailpit) |
 
 ## Prueba del correo con Mailpit
 
